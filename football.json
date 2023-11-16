@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Which team won the UEFA Champions League in 2021?",
+        "choice1": "Manchester City",
+        "choice2": "Chelsea",
+        "choice3": "Bayern Munich",
+        "choice4": "Real Madrid",
+        "answer": 2
+    },
+    {
+        "question": "Who won the Ballon d'Or in 2018?",
+        "choice1": "Lionel Messi",
+        "choice2": "Cristiano Ronaldo",
+        "choice3": "Luka Modric",
+        "choice4": "Neymar",
+        "answer": 3
+    },
+    {
+        "question": "Which country hosted the UEFA Euro 2020 tournament?",
+        "choice1": "France",
+        "choice2": "Germany",
+        "choice3": "Multiple Countries",
+        "choice4": "Portugal",
+        "answer": 3
+    },
+    {
+        "question": "What is the nickname of the Netherlands national football team?",
+        "choice1": "The Flying Dutchmen",
+        "choice2": "The Orange",
+        "choice3": "The Tulips",
+        "choice4": "The Lions",
+        "answer": 2
+    },
+    {
+        "question": "Which club did Cristiano Ronaldo play for before joining Juventus in 2018?",
+        "choice1": "Manchester United",
+        "choice2": "Sporting CP",
+        "choice3": "Real Madrid",
+        "choice4": "AC Milan",
+        "answer": 3
+    },
+    {
+        "question": "Who is the all-time top scorer of the UEFA Champions League?",
+        "choice1": "Lionel Messi",
+        "choice2": "Cristiano Ronaldo",
+        "choice3": "Raul",
+        "choice4": "Karim Benzema",
+        "answer": 2
+    },
+    {
+        "question": "Which team is known as 'The Gunners'?",
+        "choice1": "Chelsea",
+        "choice2": "Arsenal",
+        "choice3": "Manchester United",
+        "choice4": "Liverpool",
+        "answer": 2
+    },
+    {
+        "question": "In what year did Liverpool FC win their sixth Champions League title?",
+        "choice1": "2018",
+        "choice2": "2019",
+        "choice3": "2020",
+        "choice4": "2021",
+        "answer": 2
+    },
+    {
+        "question": "Which player scored the 'Hand of God' goal in the 1986 World Cup?",
+        "choice1": "Diego Maradona",
+        "choice2": "Pelé",
+        "choice3": "Lionel Messi",
+        "choice4": "Zinedine Zidane",
+        "answer": 1
+    },
+    {
+        "question": "Which country won the UEFA European Championship in 2016?",
+        "choice1": "France",
+        "choice2": "Spain",
+        "choice3": "Germany",
+        "choice4": "Portugal",
+        "answer": 4
+    }
+]
