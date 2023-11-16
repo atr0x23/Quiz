@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Every morning, she __________ (read) the newspaper while having breakfast.",
+        "choice1": "is reading",
+        "choice2": "reads",
+        "choice3": "has read",
+        "choice4": "was reading",
+        "answer": 2
+    },
+    {
+        "question": "Shhh! Be quiet! The baby __________ (sleep) right now.",
+        "choice1": "sleeps",
+        "choice2": "is sleeping",
+        "choice3": "has slept",
+        "choice4": "was sleeping",
+        "answer": 2
+    },
+    {
+        "question": "We always __________ (celebrate) our anniversary by going out to dinner.",
+        "choice1": "celebrate",
+        "choice2": "are celebrating",
+        "choice3": "celebrated",
+        "choice4": "have celebrated",
+        "answer": 1
+    },
+    {
+        "question": "Look! The cat __________ (climb) up the tree to chase the bird.",
+        "choice1": "climbs",
+        "choice2": "climbed",
+        "choice3": "is climbing",
+        "choice4": "has climbed",
+        "answer": 3
+    },
+    {
+        "question": "My brother __________ (have) a great sense of humor; he always makes us laugh.",
+        "choice1": "has",
+        "choice2": "is having",
+        "choice3": "had",
+        "choice4": "has been having",
+        "answer": 1
+    },
+    {
+        "question": "The teacher __________ (explain) the lesson, but I don’t understand it.",
+        "choice1": "explains",
+        "choice2": "is explaining",
+        "choice3": "has explained",
+        "choice4": "explained",
+        "answer": 2
+    },
+    {
+        "question": "My parents __________ (live) in a small town; they have been there for 20 years.",
+        "choice1": "live",
+        "choice2": "are living",
+        "choice3": "lived",
+        "choice4": "have lived",
+        "answer": 1
+    },
+    {
+        "question": "Why __________ (you / wear) your coat indoors? Are you cold?",
+        "choice1": "do you wear",
+        "choice2": "you are wearing",
+        "choice3": "are you wearing",
+        "choice4": "have you worn",
+        "answer": 3
+    },
+    {
+        "question": "The sun __________ (set) in the west, and right now, it __________ (create) a beautiful sunset.",
+        "choice1": "sets, is creating",
+        "choice2": "is setting, creates",
+        "choice3": "has set, is creating",
+        "choice4": "is setting, is creating",
+        "answer": 4
+    },
+    {
+        "question": "I __________ (not / believe) in ghosts, but my sister insists she saw one.",
+        "choice1": "do not believe",
+        "choice2": "am not believing",
+        "choice3": "have not believed",
+        "choice4": "did not believe",
+        "answer": 1
+    }
+]
