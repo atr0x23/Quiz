@@ -19,6 +19,7 @@ fetch('questions.json')
     return res.json(); 
 })
 .then(loadedQuestions => {
+console.log('Loaded Questions:', loadedQuestions);
 questions = loadedQuestions.results.map( loadedQuestion => {
     const formattedQuestion = {
         question: loadedQuestion.question
@@ -38,6 +39,7 @@ questions = loadedQuestions.results.map( loadedQuestion => {
 startGame();
 })
 .catch((err) => { 
+  console.error('Error loading questions:', err);
     alert("oops, something went wrong while loading the questions!");
 //    console.error(err);
 });
