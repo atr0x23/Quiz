@@ -21,7 +21,8 @@ fetch('questions.json')
 .then(loadedQuestions => {
 //console.log('Loaded Questions:', loadedQuestions);
 console.log(loadedQuestions);
-questions = loadedQuestions.results.map( loadedQuestion => {
+//questions = loadedQuestions.results.map( loadedQuestion => {
+questions = loadedQuestions.map( loadedQuestion => {
     // const formattedQuestion = {
     //     question: loadedQuestion.question
     // };
