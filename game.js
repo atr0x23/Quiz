@@ -22,20 +22,28 @@ fetch('questions.json')
 //console.log('Loaded Questions:', loadedQuestions);
 console.log(loadedQuestions);
 questions = loadedQuestions.results.map( loadedQuestion => {
-    const formattedQuestion = {
-        question: loadedQuestion.question
-    };
+    // const formattedQuestion = {
+    //     question: loadedQuestion.question
+    // };
     
-    const answerChoices = [... loadedQuestion.incorrect_answers];
-    formattedQuestion.answer = Math.floor(Math.random() * 3) +1;
-    answerChoices.splice(formattedQuestion.answer -1, 0,
-    loadedQuestion.correct_answer);
+    // const answerChoices = [... loadedQuestion.incorrect_answers];
+    // formattedQuestion.answer = Math.floor(Math.random() * 3) +1;
+    // answerChoices.splice(formattedQuestion.answer -1, 0,
+    // loadedQuestion.correct_answer);
     
-    answerChoices.forEach((choice, index) => {
-        formattedQuestion["choice" + (index+1)] = choice;
-    });
+    // answerChoices.forEach((choice, index) => {
+    //     formattedQuestion["choice" + (index+1)] = choice;
+    // });
     
-    return formattedQuestion;
+    // return formattedQuestion;
+    return {
+      question: loadedQuestion.question,
+      choice1: loadedQuestion.choice1,
+      choice2: loadedQuestion.choice2,
+      choice3: loadedQuestion.choice3,
+      choice4: loadedQuestion.choice4,
+      answer: loadedQuestion.answer
+  };
 });
 startGame();
 })
