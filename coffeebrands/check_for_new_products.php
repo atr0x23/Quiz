@@ -79,7 +79,8 @@ if($current_status > $previous_status){
 
 function sendSlack($message) {
     // URL where the request is to be sent
-    $url = 'https://hooks.slack.com/services/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';
+    $url = 'https://hooks.slack.com/services/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';
+    //$url = 'https://hooks.slack.com/services/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';
 
     // Data payload
     $data = array('text' => $message);

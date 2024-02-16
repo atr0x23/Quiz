@@ -15,7 +15,6 @@ if (file_exists('product_status.txt')) {
     $previous_status = (int)file_get_contents('product_status.txt');
 }
 
-
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -25,7 +24,7 @@ if ($conn->connect_error) {
 $conn->set_charset("utf8");
 
 // SQL query total products count
-$sql = "SELECT COUNT(id) AS count FROM wp_posts";
+$sql = "SELECT COUNT(id) AS count FROM wp_posts where post_type='product'";
 $result = $conn->query($sql);
 // Fetching the count
 if ($result->num_rows > 0) {
@@ -38,7 +37,7 @@ if ($result->num_rows > 0) {
 }
 
 //sql query product status
-$sqlForTrash = "SELECT count(id) AS product_status_count FROM wp_posts where post_status = 'trash'";
+$sqlForTrash = "SELECT count(id) AS product_status_count FROM wp_posts where post_status = 'trash' AND post_type='product'";
 $resultForTrash = $conn->query($sqlForTrash);
 // Fetching the count
 if ($resultForTrash->num_rows > 0) {
@@ -74,8 +73,8 @@ if($count_now > $previous_count){
 
     $today = date('Y-m-d');
     $yesterday = date('Y-m-d', strtotime('-1 day'));
-    //query for get product names from the deleted into trash
-    $names_query = "SELECT post_title FROM wp_posts WHERE DATE(post_date) >= '$yesterday' AND DATE(post_date) <= '$today'";
+    //query for get product names from the new products
+    $names_query = "SELECT post_title FROM wp_posts WHERE DATE(post_date) >= '$yesterday' AND DATE(post_date) <= '$today' AND post_type='product'";
     $result = $conn->query($names_query);
     if (!$result) {
         die("Error executing query: " . $mysqli->error);
@@ -114,7 +113,8 @@ if($current_status > $previous_status){
 
 function sendSlack($message) {
     // URL where the request is to be sent
-    $url = 'https://hooks.slack.com/services/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';
+    $url = 'https://hooks.slack.com/services/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';
+    //$url = 'https://hooks.slack.com/services/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';
 
     // Data payload
     $data = array('text' => $message);
